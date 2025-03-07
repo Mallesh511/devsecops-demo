@@ -163,6 +163,7 @@ jobs:
         env:
           IMAGE_TAG: sha-${{ github.sha }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          echo "github: $GITHUB_REPOSITORY" 
           REGISTRY: ghcr.io
         run: |
           # Define the new image with tag
