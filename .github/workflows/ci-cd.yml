@@ -162,8 +162,7 @@ jobs:
       - name: Update Kubernetes deployment file
         env:
           IMAGE_TAG: sha-${{ github.sha }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          echo "github: $GITHUB_REPOSITORY" 
+          GITHUB_REPOSITORY: mallesh511/devsecops-demo 
           REGISTRY: ghcr.io
         run: |
           # Define the new image with tag
